@@ -1,5 +1,5 @@
 # encoding: utf-8
-require 'carrierwave'
+# require 'carrierwave'
 
 module Spree
 class CustomizationImageUploader < CarrierWave::Uploader::Base
