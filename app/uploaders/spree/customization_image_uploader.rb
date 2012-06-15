@@ -2,15 +2,15 @@
 # require 'carrierwave'
 
 module Spree
-class CustomizationImageUploader < CarrierWave::Uploader::Base
-  include CarrierWave::RMagick
+class CustomizationImageUploader
+  # include CarrierWave::RMagick
 
   # Include RMagick or ImageScience support:
   # include CarrierWave::RMagick
   # include CarrierWave::ImageScience
 
   # Choose what kind of storage to use for this uploader:
-  storage :file
+  # storage :file
   # storage :fog
 
   # Override the directory where uploaded files will be stored.
@@ -24,9 +24,9 @@ class CustomizationImageUploader < CarrierWave::Uploader::Base
   #   "/images/fallback/" + [version_name, "default.png"].compact.join('_')
   # end
 
-  version :thumb do
-    process :resize_to_fill => [50, 50]
-  end
+  # version :thumb do
+  #   process :resize_to_fill => [50, 50]
+  # end
 
   # Process files as they are uploaded:
   # process :scale => [200, 300]
